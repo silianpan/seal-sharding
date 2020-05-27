@@ -107,7 +107,7 @@ public class MybatisPlusConfig {
 //    @Bean
 //    public MapperScannerConfigurer mapperScannerConfigurer() {
 //        MapperScannerConfigurer scannerConfigurer = new MapperScannerConfigurer();
-//        scannerConfigurer.setBasePackage("com.gcs.cloud.biz.pms.**.mapper");
+//        scannerConfigurer.setBasePackage("com.seal.sharding.**.mapper");
 //        return scannerConfigurer;
 //    }
 
