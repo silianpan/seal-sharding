@@ -14,7 +14,6 @@ import org.mybatis.spring.SqlSessionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.util.Collection;
@@ -60,7 +59,7 @@ public class BaseServiceImpl<M extends BaseMapper<T>, T> implements BaseService<
      * @date: 2018/10/11 14:04
      */
     @Override
-    public String getMappedStatementById(@NotNull String id) {
+    public String getMappedStatementById(String id) {
         return String.format("%s.%s", getMapperNamespace(), id);
     }
 

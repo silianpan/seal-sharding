@@ -1,8 +1,8 @@
 package com.seal.sharding.user.web;
 
 import com.seal.sharding.common.web.BaseController;
-import com.gcs.cloud.biz.pms.user.entity.User;
-import com.gcs.cloud.biz.pms.user.service.UserService;
+import com.seal.sharding.user.entity.User;
+import com.seal.sharding.user.service.UserService;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;

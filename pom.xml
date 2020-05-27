@@ -18,14 +18,45 @@
 		<java.version>1.8</java.version>
 		<mybatis.plus.boot.starter.version>3.1.0</mybatis.plus.boot.starter.version>
 		<sharding-sphere.version>3.1.0</sharding-sphere.version>
+		<swagger.spring.boot.starter.version>1.8.0.RELEASE</swagger.spring.boot.starter.version>
+		<hutool.all.version>4.5.2</hutool.all.version>
+		<fastjson.version>1.2.56</fastjson.version>
+		<guava.version>27.0.1-jre</guava.version>
+		<commons.lang3.version>3.8.1</commons.lang3.version>
 		<docker.plugin.version>0.4.13</docker.plugin.version>
 		<docker.image.prefix>seal-sharding</docker.image.prefix>
 	</properties>
 
 	<dependencies>
+		<!-- web -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- swagger -->
+		<dependency>
+			<groupId>com.spring4all</groupId>
+			<artifactId>swagger-spring-boot-starter</artifactId>
+			<version>${swagger.spring.boot.starter.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commons.lang3.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>${hutool.all.version}</version>
 		</dependency>
 
 		<!-- sharding-jdbc -->
@@ -42,25 +73,45 @@
 			<version>${mybatis.plus.boot.starter.version}</version>
 		</dependency>
 
+		<!-- 动态数据源 -->
+<!--		<dependency>-->
+<!--			<groupId>com.baomidou</groupId>-->
+<!--			<artifactId>dynamic-datasource-spring-boot-starter</artifactId>-->
+<!--			<version>2.5.3</version>-->
+<!--		</dependency>-->
+
 		<dependency>
 			<groupId>p6spy</groupId>
 			<artifactId>p6spy</artifactId>
 			<version>3.8.1</version>
 		</dependency>
 
-		<!-- mysql -->
+		<!-- mysql & jdbc -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 
+		<!-- alibaba -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid-spring-boot-starter</artifactId>
 			<version>1.1.10</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>${fastjson.version}</version>
+		</dependency>
+
+		<!-- lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>

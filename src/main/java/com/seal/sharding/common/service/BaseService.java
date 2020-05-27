@@ -4,7 +4,6 @@ package com.seal.sharding.common.service;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
@@ -29,7 +28,7 @@ public interface BaseService<T> {
 
     String getMapperNamespace();
 
-    String getMappedStatementById(@NotNull String id);
+    String getMappedStatementById(String id);
 
     /**
      * <p>
