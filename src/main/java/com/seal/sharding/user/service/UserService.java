@@ -5,8 +5,8 @@ import com.seal.sharding.user.entity.User;
 
 /**
  * <p>
-    * 用户表 服务类
-    * </p>
+ * 用户表 服务类
+ * </p>
  *
  * @author panliu
  * @since 2019-04-21

@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 @SpringBootApplication(exclude = {DruidDataSourceAutoConfigure.class, DataSourceAutoConfiguration.class})
 public class ShardingApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ShardingApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ShardingApplication.class, args);
+    }
 
 }

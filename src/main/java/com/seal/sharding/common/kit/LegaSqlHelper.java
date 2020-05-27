@@ -309,7 +309,7 @@ public final class LegaSqlHelper {
      * @param record
      * @return java.util.List<java.util.Map < java.lang.String, java.lang.Object>>
      * @description
-     * @author: hsc
+     * @author: liupan
      * @date: 2018/10/12 10:17
      */
     public static Map<String, Object> convertMapKeyToCamel(Map<String, Object> record) {

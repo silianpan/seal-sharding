@@ -9,14 +9,14 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class ShardingApplicationTests {
 
-	@Autowired
-	private UserService userService;
+    @Autowired
+    private UserService userService;
 
-	@Test
-	void contextLoads() {
-		User user = new User();
-		user.setUserName("liupan");
-		userService.save(user);
-	}
+    @Test
+    void contextLoads() {
+        User user = new User();
+        user.setUserName("liupan");
+        userService.save(user);
+    }
 
 }
