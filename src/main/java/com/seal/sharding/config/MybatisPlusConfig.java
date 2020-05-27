@@ -8,11 +8,7 @@ import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.tenant.TenantHandler;
 import com.baomidou.mybatisplus.extension.plugins.tenant.TenantSqlParser;
 import com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean;
-import com.gcs.cloud.base.auth.client.config.UserAuthConfig;
-import com.gcs.cloud.base.auth.client.jwt.UserAuthUtil;
-import com.gcs.cloud.base.auth.common.enums.AuthErrorCodeEnums;
-import com.gcs.cloud.base.auth.common.jwt.IJWTInfo;
-import com.gcs.cloud.base.common.ret.RetBack;
+import com.seal.sharding.common.ret.RetBack;
 import io.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration;
 import net.sf.jsqlparser.expression.Expression;
 import net.sf.jsqlparser.expression.LongValue;
@@ -36,18 +32,10 @@ import java.util.List;
 @EnableTransactionManagement
 @Configuration
 // 这个注解，作用相当于下面的@Bean MapperScannerConfigurer，2者配置1份即可
-@MapperScan("com.gcs.cloud.biz.pms.**.mapper")
+@MapperScan("com.seal.sharding.**.mapper")
 @EnableConfigurationProperties(MybatisPlusProper.class)
 @AutoConfigureAfter(SpringBootConfiguration.class)
 public class MybatisPlusConfig {
-    @Autowired
-    private UserAuthUtil userAuthUtil;
-
-    @Autowired
-    private UserAuthConfig userAuthConfig;
-
-    @Autowired
-    private HttpServletRequest request;
 
     @Autowired
     private MybatisPlusProper mybatisPlusProper;
@@ -68,15 +56,13 @@ public class MybatisPlusConfig {
         tenantSqlParser.setTenantHandler(new TenantHandler() {
             @Override
             public Expression getTenantId() {
-                // 获取当前登录用户租户ID
-                String token = request.getHeader(userAuthConfig.getTokenHeader());
                 try {
-                    IJWTInfo infoFromToken = userAuthUtil.getInfoFromToken(token);
-                    String tenantId = infoFromToken.getId();
+                    // 获取当前登录用户租户ID
+                    String tenantId = "1";
                     if (!StrUtil.isEmpty(tenantId)) {
-                        return new LongValue(infoFromToken.getId());
+                        return new LongValue(tenantId);
                     }
-                    throw new Exception(RetBack.errorJson(AuthErrorCodeEnums.EX_TENANT_NOT_EXIST));
+                    throw new Exception(RetBack.errorJson(4001, "该租户不存在"));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
