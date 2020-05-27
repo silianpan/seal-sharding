@@ -23,7 +23,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/7/25 16:49
  * @description
  */
@@ -38,7 +38,7 @@ public class BaseServiceImpl<M extends BaseMapper<T>, T> implements BaseService<
      * @param
      * @return java.lang.String
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/10/11 14:04
      */
     @Override
@@ -55,7 +55,7 @@ public class BaseServiceImpl<M extends BaseMapper<T>, T> implements BaseService<
      * @param id
      * @return java.lang.String
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/10/11 14:04
      */
     @Override
@@ -336,7 +336,7 @@ public class BaseServiceImpl<M extends BaseMapper<T>, T> implements BaseService<
      * @param id
      * @return boolean
      * @description 物理删除
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/8/8 11:12
      */
     @Override

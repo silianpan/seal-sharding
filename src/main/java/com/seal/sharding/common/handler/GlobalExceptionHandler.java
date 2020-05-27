@@ -14,7 +14,7 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/7/16 10:51
  * @description 全局的异常处理类
  */
@@ -26,7 +26,7 @@ public class GlobalExceptionHandler {
      * @param e
      * @return com.seal.sharding.common.ret.RetBack
      * @description 处理业务逻辑中发生的错误
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/8/1 10:43
      */
     @ExceptionHandler(value = Exception.class)
@@ -43,7 +43,7 @@ public class GlobalExceptionHandler {
      * @param e
      * @return com.seal.sharding.common.ret.RetBack
      * @description 处理 404错误
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/8/1 10:43
      */
     @ExceptionHandler(value = NoHandlerFoundException.class)

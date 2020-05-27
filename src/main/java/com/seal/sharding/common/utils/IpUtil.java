@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.net.InetAddress;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/8/17 17:25
  * @description
  */
@@ -22,7 +22,7 @@ public class IpUtil {
      * @param request
      * @return java.lang.String
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/8/17 17:27
      */
     public static String getIpAddr(HttpServletRequest request) {
@@ -57,7 +57,7 @@ public class IpUtil {
      * @param timeOut
      * @return boolean
      * @description 当返回值是true时，说明host是可用的，false则不可。
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-12-09 21:49
      */
     public static boolean ping(String ipAddress, int timeOut) {
@@ -78,7 +78,7 @@ public class IpUtil {
      * @param ipAddress
      * @return boolean
      * @description 超时应该在3钞以上
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-12-09 21:49
      */
     public static boolean ping(String ipAddress) {

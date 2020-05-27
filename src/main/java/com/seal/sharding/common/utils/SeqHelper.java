@@ -9,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 /**
  * 流水号生成 工具类
  *
- * @author: liupan
+ * @author: panliu
  * @date: 2018-12-06 10:02
  * @description
  */
@@ -41,7 +41,7 @@ public final class SeqHelper {
      * @param randomNumLength 随机数字长度
      * @return java.lang.String
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-12-06 10:08
      */
     public static String create(String prefix, String dateFormat, int randomNumLength) {

@@ -1,7 +1,7 @@
 package com.seal.sharding.common.ret;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/8/23 09:43
  * @description
  */

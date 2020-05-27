@@ -3,7 +3,7 @@ package com.seal.sharding.common.utils;
 import java.util.Map;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018-12-09 23:53
  * @description
  */

@@ -225,7 +225,7 @@ public final class LegaSqlHelper {
      * @param wrapper
      * @return com.baomidou.mybatisplus.mapper.com.seal.sharding.auth.server.mapper.Wrapper<?>
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/8/10 10:53
      */
     public static QueryWrapper<?> fillWrapperWithConditions(List<QueryItem> conditions, QueryWrapper<?> wrapper) {
@@ -287,7 +287,7 @@ public final class LegaSqlHelper {
      * @param records
      * @return java.util.List<java.util.Map < java.lang.String, java.lang.Object>>
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/10/12 10:17
      */
     public static List<Map<String, Object>> convertMapKeyToCamel(List<Map<String, Object>> records) {
@@ -309,7 +309,7 @@ public final class LegaSqlHelper {
      * @param record
      * @return java.util.List<java.util.Map < java.lang.String, java.lang.Object>>
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/10/12 10:17
      */
     public static Map<String, Object> convertMapKeyToCamel(Map<String, Object> record) {

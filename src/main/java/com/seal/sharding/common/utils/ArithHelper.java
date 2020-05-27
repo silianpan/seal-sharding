@@ -3,7 +3,7 @@ package com.seal.sharding.common.utils;
 import java.math.BigDecimal;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018-12-06 17:13
  * @description
  */
@@ -18,7 +18,7 @@ public final class ArithHelper {
      * @param v2
      * @return double
      * @description 2个浮点数相加
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-12-06 17:14
      */
     public static double add(double v1, double v2) {
@@ -32,7 +32,7 @@ public final class ArithHelper {
      * @param v2
      * @return double
      * @description 2个浮点数相减
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-12-06 17:15
      */
     public static double sub(double v1, double v2) {
@@ -47,7 +47,7 @@ public final class ArithHelper {
      * @param v2
      * @return double
      * @description 2个浮点数 相乘
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-12-06 17:15
      */
     public static double mul(double v1, double v2) {
@@ -62,7 +62,7 @@ public final class ArithHelper {
      * @param scale 表示表示需要精确到小数点以后几位。
      * @return double
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-12-06 17:16
      */
     public static double div(double v1, double v2, int scale) {
@@ -82,7 +82,7 @@ public final class ArithHelper {
      * @param scale
      * @return double
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-12-06 17:19
      */
     public static double round(double v, int scale) {

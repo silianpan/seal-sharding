@@ -3,7 +3,7 @@ package com.seal.sharding.common.ret;
 import lombok.Getter;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/7/16 10:48
  * @description 返回结果 code 枚举类
  * 10000 ~ 20000

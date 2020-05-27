@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/7/30 16:49
  * @description
  */
@@ -41,7 +41,7 @@ public class StrKit {
      * @param leadingCharacter
      * @return java.lang.String
      * @description 去除首尾 的某个字符
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/30 16:53
      */
     public static String trimCharacter(String str, char leadingCharacter) {
@@ -52,7 +52,7 @@ public class StrKit {
      * @param str
      * @return boolean true 为空
      * @description 判断是否为 null or ""
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/30 16:55
      * StrKit.isEmpty(null) = false
      * StrKit.isEmpty("") = false

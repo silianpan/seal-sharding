@@ -18,7 +18,7 @@ import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/7/17 10:05
  * @description
  */
@@ -35,7 +35,7 @@ public class BaseController<Bs extends BaseService, Entity extends BaseModel> {
      * @param
      * @return com.seal.sharding.common.ret.RetBack
      * @description 获取所有的数据
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-08-10
      */
     @PostMapping("/all")
@@ -49,7 +49,7 @@ public class BaseController<Bs extends BaseService, Entity extends BaseModel> {
      * @param entity
      * @return com.seal.sharding.common.ret.RetBack
      * @description 新增 or 修改
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-08-10
      */
     @PostMapping("/save")
@@ -70,7 +70,7 @@ public class BaseController<Bs extends BaseService, Entity extends BaseModel> {
      * @param id
      * @return com.seal.sharding.common.ret.RetBack
      * @description 根据id 查询数据
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-08-10
      */
     @GetMapping("/findById")
@@ -85,7 +85,7 @@ public class BaseController<Bs extends BaseService, Entity extends BaseModel> {
      * @param page
      * @return com.seal.sharding.common.ret.RetBack
      * @description 分页查询
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-08-10
      */
     @PostMapping("/page")
@@ -99,7 +99,7 @@ public class BaseController<Bs extends BaseService, Entity extends BaseModel> {
      * @param id
      * @return com.seal.sharding.common.ret.RetBack
      * @description 物理删除
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-08-10
      */
     @DeleteMapping("/delete")
@@ -113,7 +113,7 @@ public class BaseController<Bs extends BaseService, Entity extends BaseModel> {
      * @param id
      * @return com.seal.sharding.common.ret.RetBack
      * @description 逻辑删除
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/31 15:50
      */
     @DeleteMapping("/logic/delete")
@@ -129,7 +129,7 @@ public class BaseController<Bs extends BaseService, Entity extends BaseModel> {
      * @param queryItems
      * @return RetBack
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/10/22 14:51
      */
     @PostMapping("/count/number")

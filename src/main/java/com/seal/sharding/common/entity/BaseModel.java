@@ -14,7 +14,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/7/25 16:49
  * @description
  */
@@ -33,12 +33,6 @@ public class BaseModel implements Serializable {
     @ApiModelProperty("修改人")
     @TableField(value = "upd_user", fill = FieldFill.UPDATE)
     protected Object updUser;
-
-    @TableField(value = "crt_name", fill = FieldFill.INSERT)
-    protected String crtName;
-
-    @TableField(value = "upd_name", fill = FieldFill.UPDATE)
-    protected String updName;
 
     /**
      * 删除标识 逻辑删除字段
@@ -71,5 +65,4 @@ public class BaseModel implements Serializable {
     @ApiModelProperty("版本")
     @Version
     protected Integer version;
-
 }

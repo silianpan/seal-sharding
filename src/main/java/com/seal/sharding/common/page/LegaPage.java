@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/8/8 16:44
  * @description 改造 page
  */
@@ -237,7 +237,7 @@ public class LegaPage<T> implements IPage<T> {
      * @param
      * @return java.util.Map<java.lang.String, java.lang.Object>
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018-12-04 10:52
      */
     @Transient

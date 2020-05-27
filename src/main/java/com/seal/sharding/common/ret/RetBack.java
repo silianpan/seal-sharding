@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/7/3 22:52
  * @description RetBack 用于返回值封装，也用于服务端与客户端的 json 数据通信
  * 服务器不会返回异常 只会返回一个code 用于标识 异常
@@ -34,7 +34,7 @@ public class RetBack extends HashMap {
      * @param msg
      * @return com.seal.sharding.common.ret.RetBack
      * @description 成功的结果集
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/16 23:25
      */
     public static RetBack ok(String msg) {
@@ -72,7 +72,7 @@ public class RetBack extends HashMap {
      * @param value
      * @return com.seal.sharding.common.ret.RetBack
      * @description 返回一个状态为失败的结果集
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/17 00:04
      */
     public RetBack fail(int code, Object key, Object value) {
@@ -103,7 +103,7 @@ public class RetBack extends HashMap {
      * @param value
      * @return com.seal.sharding.common.ret.RetBack
      * @description 设置键值对
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/16 23:20
      */
     public RetBack set(Object key, Object value) {
@@ -154,7 +154,7 @@ public class RetBack extends HashMap {
      * @param key
      * @return boolean
      * @description key 存在，并且 value 不为 null
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/17 00:04
      */
     public boolean notNull(Object key) {
@@ -166,7 +166,7 @@ public class RetBack extends HashMap {
      * @param key
      * @return boolean
      * @description key 不存在，或者 key 存在但 value 为null
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/17 00:03
      */
     public boolean isNull(Object key) {
@@ -186,7 +186,7 @@ public class RetBack extends HashMap {
      * @param key
      * @return boolean
      * @description key 存在，并且 value 为 false，则返回 true
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/16 23:21
      */
     public boolean isFalse(Object key) {
@@ -197,7 +197,7 @@ public class RetBack extends HashMap {
     /**
      * @return java.lang.String
      * @description 转化成json 对象
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/16 23:22
      */
     public String toJson() {
@@ -208,7 +208,7 @@ public class RetBack extends HashMap {
      * @param ret
      * @return boolean
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/16 23:24
      */
     @Override
@@ -226,7 +226,7 @@ public class RetBack extends HashMap {
      * @param
      * @return boolean
      * @description 判断是否是失败消息
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/16 23:24
      */
     public boolean isFail() {
@@ -238,7 +238,7 @@ public class RetBack extends HashMap {
      * @param source
      * @return com.seal.sharding.common.ret.RetBack
      * @description 将字符串解析成 RetBack 对象
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/16 23:20
      */
     public static RetBack parse(String source) {
@@ -261,7 +261,7 @@ public class RetBack extends HashMap {
      * @param msg
      * @return com.seal.sharding.common.ret.RetBack
      * @description 跑出异常时调用此方法 封装异常信息
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/16 23:19
      */
     public static RetBack error(long code, String msg) {
@@ -274,7 +274,7 @@ public class RetBack extends HashMap {
      * @param msg
      * @return java.lang.String
      * @description 跑出异常时调用此方法 封装异常信息
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/16 23:10
      */
     public static String errorJson(long code, String msg) {
@@ -286,7 +286,7 @@ public class RetBack extends HashMap {
      * @param retEnum
      * @return java.lang.String
      * @description 抛出异常时调用此方法 封装异常信息
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/16 23:13
      */
 
@@ -300,7 +300,7 @@ public class RetBack extends HashMap {
      * @param retEnum
      * @return com.seal.sharding.common.ret.RetBack
      * @description 抛出异常时调用此方法 封装异常信息
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/7/16 23:19
      */
     public static RetBack error(IMsgCodeEnum retEnum) {

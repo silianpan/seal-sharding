@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/8/8 15:14
  * @description
  */
@@ -20,7 +20,7 @@ public interface BaseMapper<M> extends com.baomidou.mybatisplus.core.mapper.Base
      * @param id
      * @return int
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/8/8 10:54
      */
     Integer delPhysicalById(Serializable id);

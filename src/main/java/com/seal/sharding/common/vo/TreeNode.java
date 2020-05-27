@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date 2017/6/12
  */
 @Data

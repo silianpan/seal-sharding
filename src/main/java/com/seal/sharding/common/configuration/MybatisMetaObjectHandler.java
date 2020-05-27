@@ -8,7 +8,7 @@ import org.apache.ibatis.reflection.MetaObject;
 import java.time.LocalDateTime;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/7/26 16:16
  * @description mybatisplus自定义填充公共字段 ,即没有传的字段自动填充
  * @see

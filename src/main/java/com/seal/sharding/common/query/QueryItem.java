@@ -9,7 +9,7 @@ import org.springframework.lang.NonNull;
 import java.io.Serializable;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/8/8 17:02
  * @description
  */

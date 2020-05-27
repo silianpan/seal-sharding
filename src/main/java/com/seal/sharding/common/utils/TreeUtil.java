@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author: liupan
+ * @author: panliu
  * @date: 2018/8/17 17:25
  * @description
  */
@@ -17,7 +17,7 @@ public class TreeUtil {
      *
      * @return java.utils.List<T>
      * @description
-     * @author: liupan
+     * @author: panliu
      * @date: 2018/9/13 23:41
      */
     public static <T extends TreeNode> List<T> bulid(List<T> treeNodes, Object root) {

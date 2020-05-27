@@ -22,7 +22,7 @@ import java.util.TimeZone;
 /**
  * jackson2 日期序列化和反序列化处理
  *
- * @author liupan
+ * @author panliu
  * @create 2019-05-12 15:51:41
  */
 @Configuration
