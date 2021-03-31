@@ -21,7 +21,7 @@
 		<swagger.spring.boot.starter.version>1.8.0.RELEASE</swagger.spring.boot.starter.version>
 		<hutool.all.version>4.5.2</hutool.all.version>
 		<fastjson.version>1.2.56</fastjson.version>
-		<guava.version>27.0.1-jre</guava.version>
+		<guava.version>29.0-jre</guava.version>
 		<commons.lang3.version>3.8.1</commons.lang3.version>
 		<docker.plugin.version>0.4.13</docker.plugin.version>
 		<docker.image.prefix>seal-sharding</docker.image.prefix>
